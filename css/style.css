@@ -113,6 +113,7 @@
 
 .offers {
   margin: 100px 0;
+  background-color: #f8f8f8;
 }
 
 .offers > div {
@@ -156,6 +157,24 @@
   padding: 20px;
   -webkit-box-shadow: 10px 10px 34px -5px rgba(0, 0, 0, 0.29);
           box-shadow: 10px 10px 34px -5px rgba(0, 0, 0, 0.29);
+}
+
+.artykuly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #f8f8f8;
+}
+
+.artykuly > article {
+  height: 400px;
+  width: 300px;
 }
 
 @media (min-width: 576px) {
