@@ -71,13 +71,15 @@
    padding: 10px;
    text-decoration: none;
    font-family: 'Raleway', sans-serif;
-   font-weight: 300;
+   font-weight: 6 00;
    color: #22b8c2;
-}
+   text-transform: uppercase;
+  }
+
+
 
 .adv{
-  height: 60px;
-
+  background-color: gainsboro;
 }
 
 .adv >div{
@@ -91,6 +93,50 @@
   padding: 10px;
 }
 
+
+// offers-----------------------------------------------
+.offers{
+  margin: 100px 0;
+}
+
+.offers >div{
+  margin:20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.offers >div >h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: black;
+}
+
+.offers >div >p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.offers >div >a{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: black;
+  letter-spacing: 1px;
+  background-color: #00ffa3;
+  text-decoration: none;
+  padding: 20px;
+  box-shadow: 10px 10px 34px -5px rgba(0,0,0,0.29);
+}
+
+
+
+
+// media----------------------------------------------------
 @media (min-width: 576px) {
   .container {
     width: 540px;
@@ -137,6 +183,12 @@
   align-items: flex-start;
   margin-left: 20px;
 }
+
+.header-main >div >a:hover{
+  background-color: antiquewhite;
+  transition: 0.5s;
+}
+
 
 }
 @media (min-width: 1200px) {
