@@ -133,6 +133,24 @@
   box-shadow: 10px 10px 34px -5px rgba(0,0,0,0.29);
 }
 
+// article -------------------------------------------------
+
+.artykuly{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.artykuly > article{
+  height: 100px;
+  width: 50px;
+}
+
+
+
+
+
+
 
 
 
