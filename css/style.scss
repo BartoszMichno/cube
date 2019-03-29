@@ -71,7 +71,7 @@
    padding: 10px;
    text-decoration: none;
    font-family: 'Raleway', sans-serif;
-   font-weight: 6 00;
+   font-weight: 600;
    color: #22b8c2;
    text-transform: uppercase;
   }
@@ -94,9 +94,15 @@
 }
 
 
+
+.oferta{
+  background-color: #f8f8f8;
+}
+
+
 // offers-----------------------------------------------
 .offers{
-  margin: 100px 0;
+  padding: 100px 0;
   background-color: #f8f8f8;
 }
 
@@ -138,6 +144,8 @@
 
 .artykuly{
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #f8f8f8;
@@ -146,13 +154,53 @@
 .artykuly > article{
   height: 400px;
   width: 300px;
+  margin: 50px 20px;
+  padding: 50px 20px;
+  background-color: #fff;
+  box-shadow: 10px 10px 34px -5px rgba(0,0,0,0.29);
 }
 
+.artykuly > article >h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: black;
+}
 
+.artykuly > article >h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: black;
+}
 
+// products
+.produkty{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+.produkty >h2{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 40px;
+  padding: 20px 0;
+}
 
+.produkty >p{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 40px;
+}
 
+.produkty >a{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: black;
 
+}
 
 
 
@@ -209,6 +257,11 @@
   transition: 0.5s;
 }
 
+.artykuly > article:hover{
+  margin-top: 80px;
+  padding: 0 20px
+  transition: 0.5s;
+}
 
 }
 @media (min-width: 1200px) {

@@ -83,7 +83,7 @@
   padding: 10px;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
-  font-weight: 6 00;
+  font-weight: 600;
   color: #22b8c2;
   text-transform: uppercase;
 }
@@ -111,8 +111,12 @@
   padding: 10px;
 }
 
+.oferta {
+  background-color: #f8f8f8;
+}
+
 .offers {
-  margin: 100px 0;
+  padding: 100px 0;
   background-color: #f8f8f8;
 }
 
@@ -163,6 +167,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -175,6 +185,58 @@
 .artykuly > article {
   height: 400px;
   width: 300px;
+  margin: 50px 20px;
+  padding: 50px 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 10px 34px -5px rgba(0, 0, 0, 0.29);
+          box-shadow: 10px 10px 34px -5px rgba(0, 0, 0, 0.29);
+}
+
+.artykuly > article > h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: black;
+}
+
+.artykuly > article > h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: black;
+}
+
+.produkty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.produkty > h2 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 40px;
+  padding: 20px 0;
+}
+
+.produkty > p {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.produkty > a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: black;
 }
 
 @media (min-width: 576px) {
@@ -236,6 +298,11 @@
   }
   .header-main > div > a:hover {
     background-color: antiquewhite;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .artykuly > article:hover {
+    margin-top: 80px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
