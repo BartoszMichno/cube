@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 .container-fluid {
   width: 100%;
 }
@@ -154,19 +155,20 @@
 .artykuly > article{
   height: 400px;
   width: 300px;
+  padding: 0 20px;
   margin: 50px 20px;
-  padding: 50px 20px;
   background-color: #fff;
   box-shadow: 10px 10px 34px -5px rgba(0,0,0,0.29);
 }
 
-.artykuly > article >h2{
+
+.artykuly > article >h3{
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   color: black;
 }
 
-.artykuly > article >h2{
+.artykuly > article >p{
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   color: black;
@@ -196,12 +198,28 @@
 }
 
 .produkty >a{
+  margin: 0 auto;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   color: black;
-
+  letter-spacing: 1px;
+  background-color: #00ffa3;
+  text-decoration: none;
+  padding: 5px 20px;
+  box-shadow: 10px 10px 34px -5px rgba(0,0,0,0.29);
 }
 
+.zdjecia{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.zdj1{
+  display: flex;
+  
+}
 
 
 // media----------------------------------------------------
@@ -258,12 +276,11 @@
 }
 
 .artykuly > article:hover{
-  margin-top: 80px;
-  padding: 0 20px
+  transform: translateY(2rem);
   transition: 0.5s;
 }
-
 }
+
 @media (min-width: 1200px) {
   .container {
     width: 1140px;

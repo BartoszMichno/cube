@@ -185,20 +185,20 @@
 .artykuly > article {
   height: 400px;
   width: 300px;
+  padding: 0 20px;
   margin: 50px 20px;
-  padding: 50px 20px;
   background-color: #fff;
   -webkit-box-shadow: 10px 10px 34px -5px rgba(0, 0, 0, 0.29);
           box-shadow: 10px 10px 34px -5px rgba(0, 0, 0, 0.29);
 }
 
-.artykuly > article > h2 {
+.artykuly > article > h3 {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   color: black;
 }
 
-.artykuly > article > h2 {
+.artykuly > article > p {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   color: black;
@@ -234,9 +234,37 @@
 }
 
 .produkty > a {
+  margin: 0 auto;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   color: black;
+  letter-spacing: 1px;
+  background-color: #00ffa3;
+  text-decoration: none;
+  padding: 5px 20px;
+  -webkit-box-shadow: 10px 10px 34px -5px rgba(0, 0, 0, 0.29);
+          box-shadow: 10px 10px 34px -5px rgba(0, 0, 0, 0.29);
+}
+
+.zdjecia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.zdj1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (min-width: 576px) {
@@ -302,7 +330,8 @@
     transition: 0.5s;
   }
   .artykuly > article:hover {
-    margin-top: 80px;
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
